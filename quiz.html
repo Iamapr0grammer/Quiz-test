@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+</head>
+<body>
+    <h2>{{ question[0] }}</h2>
+    <form method="post" action="/process_option" >
+        <input type="radio" name="option" value="1"> {{ question[1] }}<br>
+        <input type="radio" name="option" value="2"> {{ question[2] }}<br>
+        <input type="radio" name="option" value="3"> {{ question[3] }}<br>
+        <input type="radio" name="option" value="4"> {{ question[4] }}<br><br>
+        <input type="submit" value="Wybierz">
+    </form>
+</body>
+</html>

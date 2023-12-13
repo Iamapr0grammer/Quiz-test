@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <h3>Account Sign-in</h3>
+    <h4 style="color: red;">{{ failedRegistry }}</h4>
+    <h4 style="color: green;">{{ successRegistry }}</h4>
+    <form action="/register" method="post" style="display: flex; flex-direction: column; width: 16em;">
+        <input type="text" value="user" name="username">
+        <input type="password" value="pass" name="password">
+        <input type="submit" value="Login" formaction="/login">
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
